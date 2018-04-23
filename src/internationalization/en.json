@@ -1,0 +1,16 @@
+{
+  "please_wait": "Please wait a few seconds…",
+  "app_name": "RandomRecipe",
+  "to_many_ingredients": "To many ingredients!",
+  "empty_msg": "Ingredient field cannot be empty !",
+  "already_exist": "You have already had this one !",
+  "error": "Oups, an error occured.",
+  "welcome_msg": "Welcome to RandomRecipe",
+  "desc_msg":
+    "You can add up to three ingredients to start your research (press an ingredient to remove it from the list)",
+  "add": "Add",
+  "search": "Search",
+  "recipes": "Recipes",
+  "no_results": "No result found :(",
+  "api": "API: http://www.recipepuppy.com"
+}
