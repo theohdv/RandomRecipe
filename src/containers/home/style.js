@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
   ingredient_input: {
     width: 100,
-    height: 30,
+    height: 40,
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: 3,
     borderColor: "grey",
@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
   desc_msg: {
     textAlign: "center",
     opacity: 0.7
+  },
+  span: {
+    width: 10
   },
   ingredient: {
     backgroundColor: "orange",

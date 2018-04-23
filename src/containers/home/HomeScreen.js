@@ -68,7 +68,7 @@ class HomeScreen extends Component {
         this.props.navigation.navigate("RecipesScreen");
       }
     } catch (e) {
-      console.log(e)
+      console.log(e);
       setTimeout(() => {
         Alert.alert(I18n.t("error"));
       }, 100);
@@ -95,12 +95,14 @@ class HomeScreen extends Component {
             maxLength={20}
             style={styles.ingredient_input}
             value={this.state.ingredientValue}
+            underlineColorAndroid="transparent"
             onChangeText={value => {
               this.setState({ ingredientValue: value });
             }}
           />
           <View style={styles.row_container}>
             <Button title={I18n.t("add")} onPress={this._addIngredient} />
+            <View style={styles.span}/>
             <Button title={I18n.t("search")} onPress={this._search} />
           </View>
           <View style={styles.row_container}>
@@ -120,7 +122,6 @@ class HomeScreen extends Component {
           </View>
         </View>
         <LoadingModal visible={recipes.is_requesting} />
-        <Text style={styles.api}>{I18n.t("api")}</Text>
       </SafeAreaView>
     );
   }
