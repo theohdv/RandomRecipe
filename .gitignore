@@ -1,4 +1,5 @@
 #Config
+src/config/config.js
 jsconfig.json
 top.log
 coverage/

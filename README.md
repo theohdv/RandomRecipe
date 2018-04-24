@@ -7,8 +7,9 @@ Small app in react native to get random recipes.
 git clone git@github.com:theohdv/RandomRecipe.git
 cd RandomRecipe
 npm install
+cp src/config/config.dist.js src/config/config.js 
 
-react-native run-ios // run-android
+react-native run-android
 ```
 
 # API

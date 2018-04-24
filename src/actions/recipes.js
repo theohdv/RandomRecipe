@@ -1,11 +1,12 @@
 import * as types from "./types";
+import config from "../config/config";
 
 export function fetchRecipes(ingredients) {
   return async function(dispatch, getState) {
     try {
       dispatch(fetchRecipesRequesting());
       const params = ingredients.join(",");
-      let response = await fetch("http://www.recipepuppy.com/api/?i=" + params);
+      let response = await fetch(`${config.api_url}?i=${params}`);
       response = await response.json();
       dispatch(fetchRecipesSuccess(response.results));
       return response;
